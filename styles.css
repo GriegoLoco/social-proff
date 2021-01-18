@@ -1,6 +1,214 @@
-
+*, ::before, ::after {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 /* GENERAL */
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+p {
+    font-weight: 400;
+}
 body {
     font-family: 'Spartan', sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    background-color: white;
+}
+
+/* SVG General */
+.svg img:nth-child(1) {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.svg img:nth-child(2) {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.svg img:nth-child(3) {
+    display: none;
+}
+.svg img:nth-child(4) {
+    display: none;
+}
+/* Page Content */
+.page-content {
+    z-index: 10;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Part 1 */
+.part-1 {
+    width: 450px;
+}
+.part-1 h1 {
+    font-size: 48px;
+}
+.part-1 p {
+    padding-top: 10px;
+    font-size: 14px;
+    color: hsl(303, 10%, 53%);
+}
+/* Part 2 */
+.part-2 {
+    width: 450px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.part-2 .review {
+    padding: 12px;
+    border-radius: 10px;
+    width: 400px;
+    background-color: hsl(300, 24%, 96%);
+    height: 50px;
+    text-align: center;
+}
+.part-2 .review span {
+    font-size: 14px;
+    margin-left: 15px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 500;
+}
+.part-2 .report {
+    margin-left: 50px;
+    padding: 12px;
+    border-radius: 10px;
+    width: 400px;
+    background-color: hsl(300, 24%, 96%);
+    height: 50px;
+    text-align: center;
+}
+.part-2 .report span {
+    font-size: 14px;
+    margin-left: 15px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 500;
+}
+.part-2 .besttech {
+    margin-left: 100px;
+    padding: 12px;
+    border-radius: 10px;
+    width: 400px;
+    background-color: hsl(300, 24%, 96%);
+    height: 50px;
+    text-align: center;
+}
+.part-2 .besttech span {
+    font-size: 14px;
+    margin-left: 15px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 500;
+}
+.part-3 {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.buyer-1 {
+    width: 350px;
+    height: 220px;
+    border-radius: 10px;
+    background-color: hsl(300, 43%, 22%);
+
+}
+.buyer-1 img {
+    border-radius: 50%;
+    transform: scale(50%) translateX(30%);
+}
+.buyer-1 .name {
+    position: relative;
+    color: white;
+    font-size: 14px;
+    transform: translate3d(30%, -350%, 0);
+}
+.buyer-1 .title {
+    color: hsl(333, 80%, 67%);
+    font-size: 14px;
+    font-weight: 400;
+    transform: translate3d(30%, -350%, 0);
+}
+.buyer-1 .opinion {
+    color: white;
+    font-size: 12px;
+    width: 300px;
+    transform: translateX(10%);
+}
+.buyer-2 {
+    transform: translate3d(10%, 10%, 0);
+    width: 350px;
+    height: 220px;
+    border-radius: 10px;
+    background-color: hsl(300, 43%, 22%);
+
+}
+.buyer-2 img {
+    border-radius: 50%;
+    transform: scale(50%) translateX(30%);
+}
+.buyer-2 .name {
+    position: relative;
+    color: white;
+    font-size: 14px;
+    transform: translate3d(30%, -350%, 0);
+}
+.buyer-2 .title {
+    color: hsl(333, 80%, 67%);
+    font-size: 14px;
+    font-weight: 400;
+    transform: translate3d(30%, -350%, 0);
+}
+.buyer-2 .opinion {
+    color: white;
+    font-size: 12px;
+    width: 300px;
+    transform: translateX(10%);
+}
+.buyer-3 {
+    transform: translate3d(20%, 20%, 0);
+    width: 350px;
+    height: 220px;
+    border-radius: 10px;
+    background-color: hsl(300, 43%, 22%);
+
+}
+.buyer-3 img {
+    border-radius: 50%;
+    transform: scale(50%) translateX(30%);
+}
+.buyer-3 .name {
+    position: relative;
+    color: white;
+    font-size: 14px;
+    transform: translate3d(30%, -350%, 0);
+}
+.buyer-3 .title {
+    color: hsl(333, 80%, 67%);
+    font-size: 14px;
+    font-weight: 400;
+    transform: translate3d(30%, -350%, 0);
+}
+.buyer-3 .opinion {
+    color: white;
+    font-size: 12px;
+    width: 300px;
+    transform: translateX(10%);
 }
